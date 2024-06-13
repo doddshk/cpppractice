@@ -27,11 +27,11 @@ void bubble(std::vector<int>* vect)
   {
     for(int j = i; j < vect->size()-i-1; j++)
     {
-      if((*vect)[i]<(*vect)[j])
+      if((*vect)[j+1]<(*vect)[j])
       {
-        int temp = (*vect)[i];
-        (*vect)[i] = (*vect)[j];
-        (*vect)[j] = temp;
+        int temp = (*vect)[j];
+        (*vect)[j] = (*vect)[j+1];
+        (*vect)[j+1] = temp;
       }
     }
   }
