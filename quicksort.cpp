@@ -17,7 +17,7 @@ int quickSort(std::vector<int> arr, int high, int low)
 	}
 	std::vector<int> ans;
 	quicksort(hvect,0,0);
-	return quicksort(h;
+	return quicksort(arr, high, low);
 }
 std::vector<int> part(std::vector<int> vect, int high, int low)
 {
